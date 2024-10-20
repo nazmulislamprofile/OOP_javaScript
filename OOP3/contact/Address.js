@@ -16,6 +16,51 @@ class Address{
     }
 
     get id(){
-        
+       return this[_id] 
+    }
+
+    get roadNo(){
+        return this[_roadNo]
+    }
+    set roadNo(value){
+        this[_roadNo]=value;
+    }  
+
+    get city(){
+        return this[_city]
+    }
+    set city(value){
+        this[_roadNo]=value;
+    }  
+
+    get region(){
+        return this[_region]
+    }
+    set region(value){
+        this[_region]=value;
+    } 
+    get country(){
+        return this[_country]
+    }
+    set country(value){
+        this[_country]=value;
+    } 
+
+    get postalcode(){
+        return this[_postalCode]
+    }
+    set postalcode(value){
+        this[_postalCode]=value;
+    } 
+
+    toString(){
+        return 
+        `RoadNo: ${this[_roadNo]},
+        city: ${this[_city]},
+        Region: ${this[_region]},
+        Country: ${this[_country]}
+        `
     }
 }
+
+module.exports=Address
